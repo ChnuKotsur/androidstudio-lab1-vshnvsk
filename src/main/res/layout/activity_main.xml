@@ -4,17 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Нідерланди"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <Spinner
+        android:id="@+id/country_spinner"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:entries="@array/counties"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -23,13 +19,15 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Вільгельм з Нассау я німецької крові,\n вірний вітчизні залишуся до смерті.\n
-Принцеса Помаранчева я вільний, неоперений,\n короля Іспанії я завжди шанував."
+        android:id="@+id/anthem_textview"
+        android:layout_width="381dp"
+        android:layout_height="177dp"
+        android:layout_below="@+id/country_spinner"
+        android:text=""
         android:textDirection="inherit"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
